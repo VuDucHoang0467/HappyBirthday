@@ -1308,3 +1308,47 @@ audio {
     		-webkit-transform: scale(0.9);
     	}
     }*/
+
+.left-image {
+    position: fixed;
+    left: 130px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 400px;
+    height: auto;
+}
+
+.right-image {
+    position: fixed;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 550px;
+    height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .left-image, .right-image {
+        width: 100px;
+        left: 10px;
+        right: 10px;
+    }
+
+    .cake {
+        width: 200px;
+        margin-left: -100px;
+    }
+
+    .btn-primary {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .message p {
+        font-size: 20px;
+    }
+}
